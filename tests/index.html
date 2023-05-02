@@ -21,7 +21,6 @@
             ["sign", "verify"]
         )
         const node = await WebRTCPlumber(k);
-        node.peer.on("connection", conn => console.log("[Plumber] connected to ", conn.peer));
 
         window.node = node;
         console.log(node);
