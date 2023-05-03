@@ -1,4 +1,4 @@
-# WebRTCplumber
+# WebRTCPlumber
 Adds pubsub, piping, data validation, and more to WebRTC using Peerjs.
 
 ## PubSub
