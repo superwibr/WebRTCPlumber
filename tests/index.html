@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="background:black">
+<html lang="en" style="background:black;color:white;">
 
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,13 @@
 
         window.node = node;
         console.log(node);
+
+        document.body.innerHTML = `ID: <input type="text" value="${node.id}"/><br/><br/><input type="text" id="connid" placeholder="Peer ID"/><button id="connadd">connect</button>`;
+        document.querySelector("#connadd").onclick = () => {
+            const input = document.querySelector("#connid");
+            node.connect(input.value);
+            input.value = "";
+        }
     </script>
 </body>
 
