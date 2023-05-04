@@ -1,5 +1,6 @@
 # WebRTCPlumber
 Adds pubsub, piping, data validation, and more to WebRTC using Peerjs.
+NOTE: will be re-writing this to use simple-peer because I don't like PeerJS' reliance on their custom signaling servers.
 
 ## PubSub
 pubsub, or publish/subscribe, allows peers to subscribe to "topics" and publish to them. A peer only recieves messages from a topic if they are subscribed to it.
